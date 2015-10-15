@@ -1,0 +1,22 @@
+doctype html
+html( lang="en" )
+    head
+        meta( charset="utf-8" )/
+        title
+            | My first express site with jade
+        style
+            | body{
+            |    font-family: "Avenir Next";
+            | }
+    body
+        // Rendered comment in html
+        //- Jade-only comment.
+        h1= page_title
+        p 
+            | Lorem ipsum dolor sit amet, consectetur adipisicing elit 
+            | sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+            br/
+            | Ut enim ad minim veniam, quis nostrud exercitation ullamco 
+            | laboris nisi ut aliquip ex ea commodo consequat. 
+        figure
+            img( src="img/#{ img_src }", alt="Grillades, the mad cat!", width="500" )
